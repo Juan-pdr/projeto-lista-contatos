@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App contatos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main>
+        <header><h1>Lista de contatos 👤</h1></header>
+
+        <section class="filtros-section">
+            <form id="filtros">
+                <input type="text" id="input-nome" placeholder="Nome">
+                <input type="text" id="input-cidade" placeholder="Cidade">
+                <input type="text" id="input-nome" placeholder="E-mail">
+                <input type="text" id="input-nome" placeholder="Telefone">
+
+                <button class="submitBttn" id="filtrar-bttn">Filtrar</button>
+                <button class="submitBttn" id="delFiltro-bttn">Filtrar</button>
+            </form>
+        </section>
+
+        <section class="lista-contatos-section">
+
+            <h2>lista de contatos</h2>
+
+            <table>
+                <thead>
+                    <th>Telefone </th> <th>E-mail</th> 
+                    <th>Cidade</th> 
+                </thead>
+
+                <tbody id="lista-contatos">
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+        <section class="add-contact-section">
+
+            <h2>Adcionar contatos</h2>
+
+            <form action="" id="add-contact">
+                <input type="number" placeholder="Telefone">
+                <input type="text" placeholder="E-mail (opcional)">
+                <input type="text" placeholder="Nome">
+
+                <button class="submitBttn" id="add-contact-bttn">Enviar</button>
+            </form>
+
+        </section>
+
+        <section class="delContact-section">
+            <input type="text" placeholder="Numero para excluir">
+            <button class="submitBttn" id="delContact-bttn">Excluir</button>
+        </section>
+    </main>
+</body>
+</html>
